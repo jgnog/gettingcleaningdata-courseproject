@@ -103,3 +103,6 @@ dataset$activity <- sapply(dataset$activity, get_activity)
 
 summarized_dataset <- group_by(dataset, activity, subject) %>%
                         summarise_all(mean)
+
+# Final output should be the clean dataset
+dataset
